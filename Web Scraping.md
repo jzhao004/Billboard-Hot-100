@@ -13,7 +13,7 @@ import re
 ```python
 main_url = 'https://www.billboard.com/charts/hot-100'
 main_r = requests.get(main_url)
-main_soup = BeautifulSoup(main_r.content,'html.parser')
+main_soup = BeautifulSoup(main_r.content, 'html.parser')
 ```
 
 ##### Extract urls of all subpages containing song lyrics from HTML content
@@ -35,8 +35,8 @@ f.writerow(['title', 'artist', 'lyrics', 'url'])
 for link in links:
     url = str(link.find('a').get('href'))
     r = requests.get(url)
-    soup = BeautifulSoup(r.content,'html.parser')
-    song = str(soup.find('div',{'class':'lyrics'}))
+    soup = BeautifulSoup(r.content, 'html.parser')
+    song = str(soup.find('div', {'class':'lyrics'}))
     
     # Extract artist and song title 
     pat = re.compile(r'"(.*?)"')
