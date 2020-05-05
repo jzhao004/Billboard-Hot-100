@@ -4,7 +4,6 @@
 library(tidyverse)
 library(quanteda)
 library(wordcloud)
-library(NbClust)
 ```
 
 ### Import Data 
