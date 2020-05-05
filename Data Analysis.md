@@ -1,4 +1,4 @@
-### Load Required Packages 
+#### Load Required Packages 
 
 ```{r}
 library(tidyverse)
@@ -6,13 +6,13 @@ library(quanteda)
 library(wordcloud)
 ```
 
-### Import Data 
+#### Import Data 
 
 ```{r }
 f <- read_csv("billboard-hot100-lyrics.csv")
 ```
 
-### Inspect Data
+#### Inspect Data
 
 ```{r}
 head(f)
@@ -21,9 +21,7 @@ head(f)
 cat("There are", as.character(dim(f)[1]), "songs in the dataset")
 ```
 
-### Data Analysis 
-
-#### What are the most common words in song lyrics? 
+#### Find the most common words in song lyrics
 
 ```{r}
 # Create document-feature matrix 
