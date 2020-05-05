@@ -1,4 +1,4 @@
-### Install Required Libraries
+#### Install Required Libraries
 
 ```python
 from bs4 import BeautifulSoup 
@@ -7,7 +7,7 @@ import csv
 import re
 ```
 
-### Web Scrape Billboard Hot 100 webpage
+#### Web Scrape Billboard Hot 100 webpage
 ##### Access HTML content of Billboard Hot 100 webpage and parse HTML content 
 
 ```python
